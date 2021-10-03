@@ -46,8 +46,8 @@ const questions = [
     message: "How are you licensing your project?",
     choices: [
       "MIT",
-      "GNU General Public License",
-      "Eclipse Public License",
+      "GNU GPL v3",
+      "Eclipse Public License 1.0",
       "I'm not licensing my project because I'm a rebel who has no regard for copyright law.",
     ],
   },

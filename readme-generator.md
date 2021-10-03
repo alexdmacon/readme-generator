@@ -1,8 +1,10 @@
 # readme-generator
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]
+
 ## Description
 
-yep
+sdffsd
 
 ## Table of Contents
 
@@ -15,11 +17,11 @@ yep
 
 ## Installation
 
-yep
+sdf
 
 ## Usage
 
-yep
+sf
 
 ## Credits
 
@@ -27,11 +29,11 @@ yep
 
 ## License
 
-MIT
+GNU GPL v3
 
 ## Contributing
 
-yep
+sdf
 
 ## Tests
 
@@ -43,5 +45,5 @@ npm test
 
 Got questions? Just reach out and ask.
 
-- Email: alexdmacon@gmail.com
-- GitHub: [alexdmacon](https://github.com/alexdmacon)
+- Email: 
+- GitHub: [](https://github.com/)
