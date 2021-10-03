@@ -1,5 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+
 function renderLicenseBadge(license) {
   if (license === "MIT") {
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
@@ -12,11 +12,17 @@ function renderLicenseBadge(license) {
   }
 }
 
-// https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+    if (license === "MIT") {
+      return `[${license}](https://opensource.org/licenses/MIT)`
+    } else if (license === "GNU GPL v3") {
+      return `[${license}](https://www.gnu.org/licenses/gpl-3.0)`
+    } else if (license === "Eclipse Public License 1.0") {
+      return `[${license}]((https://opensource.org/licenses/EPL-1.0))`
+    } else {
+      return ""
+    }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -55,7 +61,7 @@ ${data.credits}
 
 ## License
 
-${data.license}
+${renderLicenseLink(data.license)}
 
 ## Contributing
 

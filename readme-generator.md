@@ -1,10 +1,10 @@
 # readme-generator
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 
 ## Description
 
-sdffsd
+
 
 ## Table of Contents
 
@@ -17,11 +17,11 @@ sdffsd
 
 ## Installation
 
-sdf
+
 
 ## Usage
 
-sf
+
 
 ## Credits
 
@@ -29,11 +29,11 @@ sf
 
 ## License
 
-GNU GPL v3
+[MIT](https://opensource.org/licenses/MIT)
 
 ## Contributing
 
-sdf
+
 
 ## Tests
 
