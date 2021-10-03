@@ -1,5 +1,4 @@
-// https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
-
+// creates image of License badge. Argument (license) is being passed from the generateMarkdown function below.
 function renderLicenseBadge(license) {
   if (license === "MIT") {
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
@@ -12,6 +11,7 @@ function renderLicenseBadge(license) {
   }
 }
 
+// creates hyperlink to license within text of chosen license. argument passed from the generateMarkdown function below.
 function renderLicenseLink(license) {
   if (license === "MIT") {
     return `[${license}](https://opensource.org/licenses/MIT)`;
@@ -24,6 +24,7 @@ function renderLicenseLink(license) {
   }
 }
 
+// creates markdown with link to user's GitHub page, copyright info, and license info. arguments passed from generateMarkdown fucntion below.
 function renderLicenseSection(license, github) {
   if ((license, github)) {
     return `Copyright 2021 ©[${github}](https://github.com/${github}). Shared under the ${renderLicenseLink(
@@ -32,6 +33,7 @@ function renderLicenseSection(license, github) {
   }
 }
 
+// this is the function that creates the actual markdown template literal that will incorporate user input where indicated with ${expressions}. The (data) argument is being passed from code written in index.js: all the "answers" given by the user in response to the inquirer prompt.
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -52,7 +54,7 @@ ${data.description}
 
 ${data.installation}
 
-You'll need to install the following dependencies by entering this in your command line interface:
+You'll need to install the necessary dependencies by entering this in your command line interface:
 - ${data.npm}
 
 ## Usage
@@ -85,4 +87,5 @@ Got questions? Just reach out and ask.
 `;
 }
 
+// allows us to export the generateMarkdown function to index.js, which is the script we're technically gonna be running using node from the terminal.
 module.exports = generateMarkdown;

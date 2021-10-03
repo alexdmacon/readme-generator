@@ -1,7 +1,9 @@
+// importing the modules, functions, and npm packages we'll need: inquirer to get user input in response to our questions on the command line, generateMarkdown script to create the template literal incorporating user input, and fs to actually write the README.
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+// array holding questions user will answer via inquirer prompt.
 const questions = [
   {
     name: "github",
@@ -68,6 +70,7 @@ const questions = [
   },
 ];
 
+// actually creates the file, using arguments passed through init function below: fileName is `${answers.title}.md` and data is spread answers to inquirer prompt, as run through the generateMarkdown function.
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     if (err) {
@@ -78,6 +81,7 @@ function writeToFile(fileName, data) {
   });
 }
 
+// prompts user to answer questions in above array. passes answers into callback functions that will generate the markdown and write the files.
 function init() {
   inquirer.prompt(questions).then((answers) => {
     console.log(`${answers.title}.md`);
