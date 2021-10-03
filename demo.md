@@ -1,10 +1,10 @@
-# readme-generator
+# demo
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 
 ## Description
 
-WOO
+This is the greatest project in the world.
 
 ## Table of Contents
 
@@ -12,20 +12,21 @@ WOO
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-- [Contributing](#Contributing)
-- [Questions](#Questions)
 
 ## Installation
 
-YEAH
+The right way.
+
+You'll need to install the following dependencies by entering this in your command line interface:
+- npm i
 
 ## Usage
 
-WHAT
+However you want. It's that great.
 
 ## Credits
 
-YA
+Steve. Also I looked at a lot of websites.
 
 ## License
 
@@ -33,13 +34,12 @@ Copyright 2021 ©[alexdmacon](https://github.com/alexdmacon). Shared under the [
 
 ## Contributing
 
-NOPE
+They can write some code too.
 
 ## Tests
 
-I don't quite understand what this means right now but hopefully will soon.
-npm test
-
+To run tests, enter this in your command line interface: 
+- npm test
 
 ## Questions
 

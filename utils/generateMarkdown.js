@@ -24,8 +24,6 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license, github) {
   if ((license, github)) {
     return `Copyright 2021 ©[${github}](https://github.com/${github}). Shared under the ${renderLicenseLink(
@@ -34,7 +32,6 @@ function renderLicenseSection(license, github) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -50,12 +47,13 @@ ${data.description}
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-- [Contributing](#Contributing)
-- [Questions](#Questions)
 
 ## Installation
 
 ${data.installation}
+
+You'll need to install the following dependencies by entering this in your command line interface:
+- ${data.npm}
 
 ## Usage
 
@@ -75,9 +73,8 @@ ${data.contribution}
 
 ## Tests
 
-I don't quite understand what this means right now but hopefully will soon.
-${data.tests}
-
+To run tests, enter this in your command line interface: 
+- ${data.tests}
 
 ## Questions
 

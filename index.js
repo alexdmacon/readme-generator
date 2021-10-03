@@ -4,6 +4,16 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 const questions = [
   {
+    name: "github",
+    type: "input",
+    message: "What's your GitHub username?",
+  },
+  {
+    name: "email",
+    type: "input",
+    message: "What's your email address?",
+  },
+  {
     name: "title",
     type: "input",
     message: "What's the title of your project?",
@@ -31,13 +41,13 @@ const questions = [
   {
     name: "npm",
     type: "input",
-    message: "What npm packages need to be installed?",
-    default: "npm i inquirer",
+    message: "What should the user enter in the command line to install dependencies?",
+    default: "npm i",
   },
   {
     name: "tests",
     type: "input",
-    message: "How do you test whether this thing is working?",
+    message: "What should the user enter in the command line to run tests?",
     default: "npm test",
   },
   {
@@ -56,24 +66,14 @@ const questions = [
       type: "input",
       message: "Who worked on this project? What other resources should be credited?",
   },
-  {
-    name: "github",
-    type: "input",
-    message: "What's your GitHub username?",
-  },
-  {
-    name: "email",
-    type: "input",
-    message: "What's your email address?",
-  },
 ];
 
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     if (err) {
-      console.log("ERROR:", err);
+      console.log("ERROR: ", err);
     } else {
-      console.log("It worked!");
+      console.log("It worked! Creating README.");
     }
   });
 }
