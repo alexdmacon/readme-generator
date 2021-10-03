@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a README generator. Using node.js and the Inquirer NPM package, the user will respond to a set of command line prompts. The app then generates markdown within a template, incorporating the user's responses and saving the resulting .md file. I developed this to learn concepts related to node.js and to get experience working with NPM packages, and to continue—as always—practicing JavaScript, particularly callback functions, object destructuring, and spread syntax.
+This is a README generator. Using node.js and the Inquirer NPM package, the user will respond to a set of command line prompts. The app then generates markdown within a template, incorporating the user's responses and saving the resulting .md file. I developed this to learn concepts related to node.js and to get experience working with NPM packages including Inquirer and node modules like fs. This also allowed me to continue—as always—practicing JavaScript, particularly callback functions, object destructuring, and spread syntax.
 
 [Here's a link to a video demo showing the README generator in action](https://drive.google.com/file/d/1ABlOvcJX1FA7pPAnOlrm02UJkzmfVbn4/view)
 
@@ -39,7 +39,9 @@ The following links and documentation proved helpful as I was working on this:
 - https://www.npmjs.com/package/inquirer
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 - https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
-- 
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+- https://opensource.org/licenses/MIT
+
 
 ## License
 
