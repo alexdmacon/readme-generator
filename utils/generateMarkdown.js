@@ -2,31 +2,37 @@
 
 function renderLicenseBadge(license) {
   if (license === "MIT") {
-    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
   } else if (license === "GNU GPL v3") {
-    return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]`
+    return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]`;
   } else if (license === "Eclipse Public License 1.0") {
-    return `[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)]`
+    return `[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)]`;
   } else {
-    return ""
+    return "";
   }
 }
 
 function renderLicenseLink(license) {
-    if (license === "MIT") {
-      return `[${license}](https://opensource.org/licenses/MIT)`
-    } else if (license === "GNU GPL v3") {
-      return `[${license}](https://www.gnu.org/licenses/gpl-3.0)`
-    } else if (license === "Eclipse Public License 1.0") {
-      return `[${license}]((https://opensource.org/licenses/EPL-1.0))`
-    } else {
-      return ""
-    }
+  if (license === "MIT") {
+    return `[${license}](https://opensource.org/licenses/MIT)`;
+  } else if (license === "GNU GPL v3") {
+    return `[${license}](https://www.gnu.org/licenses/gpl-3.0)`;
+  } else if (license === "Eclipse Public License 1.0") {
+    return `[${license}]((https://opensource.org/licenses/EPL-1.0))`;
+  } else {
+    return "";
+  }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license, github) {
+  if ((license, github)) {
+    return `Copyright 2021 ©[${github}](https://github.com/${github}). Shared under the ${renderLicenseLink(
+      license
+    )} license.`;
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -61,7 +67,7 @@ ${data.credits}
 
 ## License
 
-${renderLicenseLink(data.license)}
+${renderLicenseSection(data.license, data.github)}
 
 ## Contributing
 

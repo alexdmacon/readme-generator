@@ -4,7 +4,7 @@
 
 ## Description
 
-
+WOO
 
 ## Table of Contents
 
@@ -17,23 +17,23 @@
 
 ## Installation
 
-
+YEAH
 
 ## Usage
 
-
+WHAT
 
 ## Credits
 
-
+YA
 
 ## License
 
-[MIT](https://opensource.org/licenses/MIT)
+Copyright 2021 ©[alexdmacon](https://github.com/alexdmacon). Shared under the [MIT](https://opensource.org/licenses/MIT) license.
 
 ## Contributing
 
-
+NOPE
 
 ## Tests
 
@@ -45,5 +45,5 @@ npm test
 
 Got questions? Just reach out and ask.
 
-- Email: 
-- GitHub: [](https://github.com/)
+- Email: alexdmacon@gmail.com
+- GitHub: [alexdmacon](https://github.com/alexdmacon)
