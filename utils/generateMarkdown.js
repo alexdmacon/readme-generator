@@ -15,6 +15,51 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+## Description
+
+${data.description}
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Contributing](#Contributing)
+- [Questions](#Questions)
+
+## Installation
+
+${data.installation}
+
+## Usage
+
+${data.usage}
+
+## Credits
+
+${data.credits}
+
+## License
+
+${data.license}
+
+## Contributing
+
+${data.contribution}
+
+## Tests
+
+I don't quite understand what this means right now but hopefully will soon.
+${data.tests}
+
+
+## Questions
+
+Got questions? Just reach out and ask.
+
+- Email: ${data.email}
+- GitHub: [${data.github}](https://github.com/${data.github})
 `;
 }
 
